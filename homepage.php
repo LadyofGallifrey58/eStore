@@ -5,9 +5,10 @@
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+   <meta charset="UTF-8">
 </head>
 <body>
 
@@ -83,7 +84,7 @@
          <div id="instructions">
          </div>
 
-         <form action"" method="post">
+         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
             <div class="card-deck">
                <div class="card">
                   <img class="card-img-top" src="https://i.pinimg.com/736x/82/f0/b0/82f0b06b11114bed643691ff5836763c--peter-pan-peter-otoole.jpg" alt="Peter Pan">
