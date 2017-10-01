@@ -45,7 +45,10 @@
       echo $_SESSION['address'] . "<br/>";
       echo $_SESSION['city'] . ", " . $_SESSION['state'] . ", " . $_SESSION['zipCode'] . "<br/>";
    ?>
-
+   <?php
+      session_unset();
+      session_destroy();
+   ?>
 
 
 </body>
